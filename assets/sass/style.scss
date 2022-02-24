@@ -46,6 +46,57 @@ main {
         &#dash9 { transform: rotate(180deg); align-self: center; left: 5px; margin: auto; }
     }
 
+    // analog clock
+    #dot {
+        border-radius: 30px;
+        background-color: $color4;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow: 1px 1px 2px $color4;
+        position: absolute;
+        z-index: 110;
+    }
+
+    .dashTime {
+        width: 75px;
+        position: absolute;
+        border-radius: 7px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 35%;
+        margin: auto;
+        
+
+        transform-origin: right;
+        transform: rotate(90deg);
+
+    }
+
+    #dashHour {
+        height: 7px;
+        background-color: $color2;
+        z-index: 98;
+    }
+
+    #dashMinutes {
+        height: 3px;
+        background-color: $color4;
+        z-index: 99;
+    }
+
+    #dashSeconds {
+        height: 2px;
+        background-color: $color1;
+        z-index: 100;
+    }
+
+    // digital clock
     #screenClock {
         display: inline-block;
         position: absolute;

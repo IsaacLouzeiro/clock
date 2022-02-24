@@ -64,6 +64,47 @@ main {
   left: 5px;
   margin: auto;
 }
+#clock #dot {
+  border-radius: 30px;
+  background-color: #363537;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 1px 1px 2px #363537;
+  position: absolute;
+  z-index: 110;
+}
+#clock .dashTime {
+  width: 75px;
+  position: absolute;
+  border-radius: 7px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 35%;
+  margin: auto;
+  transform-origin: right;
+  transform: rotate(90deg);
+}
+#clock #dashHour {
+  height: 7px;
+  background-color: #35CE8D;
+  z-index: 98;
+}
+#clock #dashMinutes {
+  height: 3px;
+  background-color: #363537;
+  z-index: 99;
+}
+#clock #dashSeconds {
+  height: 2px;
+  background-color: #E07A5F;
+  z-index: 100;
+}
 #clock #screenClock {
   display: inline-block;
   position: absolute;
