@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FDFDFF;
+  font-family: sans-serif;
+}
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #E07A5F;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  width: 230px;
+  height: 230px;
+  background-color: #FDFDFF;
+  border: 10px solid #363537;
+  box-shadow: inset 0 0 10px #35CE8D;
+  border-radius: 125px;
+  position: relative;
+  display: flex;
+}
+#clock .dash {
+  border: 2px solid #363537;
+  background-color: #363537;
+  box-shadow: 1px 1px 2px #363537;
+  width: 25px;
+  position: absolute;
+}
+#clock .dash#dash1 {
+  transform: rotate(90deg);
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#clock .dash#dash3 {
+  transform: rotate(180deg);
+  align-self: center;
+  right: 5px;
+  margin: auto;
+}
+#clock .dash#dash6 {
+  transform: rotate(270deg);
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#clock .dash#dash9 {
+  transform: rotate(180deg);
+  align-self: center;
+  left: 5px;
+  margin: auto;
+}
+#clock #screenClock {
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
+  padding: 3px 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: 3px solid #363537;
+  box-shadow: inset 0 0 4px #35CE8D;
+  border-radius: 3px;
+  background-color: #363537;
+}
+#clock #screenClock span {
+  color: #E07A5F;
+}
+
+/*# sourceMappingURL=style.css.map */
