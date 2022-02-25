@@ -19,6 +19,52 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+@keyframes swingingPicture {
+  0% {
+    transform: rotate(10deg);
+    transform-origin: top left;
+  }
+  50% {
+    transform: rotate(0deg);
+    transform-origin: top left;
+  }
+  100% {
+    transform: rotate(10deg);
+    transform-origin: top left;
+  }
+}
+#picture {
+  width: 150px;
+  height: 200px;
+  margin-top: 15px;
+  background-color: #363537;
+  position: relative;
+  border: 10px solid #363537;
+  box-shadow: inset 0 0 15px #35CE8D;
+  animation-name: swingingPicture;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+#picture .glass {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 253, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#picture .glass #logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/myLogo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #clock {
