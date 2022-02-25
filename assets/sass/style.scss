@@ -42,14 +42,17 @@ main {
 }
 
 // picture
+.linkPicture {
+    margin-top: 15px;
+}
+
 #picture {
     width: 150px;
     height: 200px;
-    margin-top: 15px;
     background-color: $color4;
     position: relative;
     border: 10px solid $color4;
-    box-shadow: inset 0 0 15px $color2;
+    box-shadow: 3px 3px 3px $color4;
     animation-name: swingingPicture;
     animation-iteration-count: infinite;
     animation-duration: 3s;
@@ -63,6 +66,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: inset 0 0 15px $color2;
 
         #logo {
             width: 100px;
